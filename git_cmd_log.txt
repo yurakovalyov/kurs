@@ -73,3 +73,58 @@ Switched to branch 'homework'
 D:\repos\kurs>notepad git_cmd_log.txt
 
 D:\repos\kurs>
+
+D:\repos\kurs>git commit -a -m "log at homework"
+On branch homework
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        git_cmd_log.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\repos\kurs>git add git_cmd_log.txt
+
+D:\repos\kurs>git commit -m "log at homework"
+[homework a48e2da] log at homework
+ 1 file changed, 75 insertions(+)
+ create mode 100644 git_cmd_log.txt
+
+D:\repos\kurs>git log
+commit a48e2da98a53d20eca210217296cd0c1393b40f7 (HEAD -> homework)
+Author: Sergey Postnikov <postsergey@gmail.com>
+Date:   Tue Oct 3 23:44:26 2023 +0300
+
+    log at homework
+
+commit d492f3963822a4896986c29bab611705ccb7c338 (master)
+Author: Sergey Postnikov <postsergey@gmail.com>
+Date:   Tue Oct 3 23:39:14 2023 +0300
+
+    'start'
+
+D:\repos\kurs>git checkout master
+Switched to branch 'master'
+
+D:\repos\kurs>git status
+On branch master
+nothing to commit, working tree clean
+
+D:\repos\kurs>git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        bank.jpg
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\repos\kurs>git add bank.jpg
+
+D:\repos\kurs>git commit -m "funny pic"
+[master 73da0dc] funny pic
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 bank.jpg
+
+D:\repos\kurs>git checkout homework
+Switched to branch 'homework'
+
+D:\repos\kurs>notepad git_cmd_log.txt
