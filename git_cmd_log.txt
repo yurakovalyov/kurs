@@ -1,0 +1,75 @@
+Microsoft Windows [Version 10.0.22621.2134]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\user>d:
+
+D:\>cd repos
+
+D:\repos>dir
+ Volume in drive D is data
+ Volume Serial Number is D09D-2B6B
+
+ Directory of D:\repos
+
+10/03/2023  11:02    <DIR>          .
+10/03/2023  10:54    <DIR>          superset
+               0 File(s)              0 bytes
+               2 Dir(s)  194,914,340,864 bytes free
+
+D:\repos>md kurs
+
+D:\repos>cd kurs
+
+D:\repos\kurs>git init
+Initialized empty Git repository in D:/repos/kurs/.git/
+
+D:\repos\kurs>dir
+ Volume in drive D is data
+ Volume Serial Number is D09D-2B6B
+
+ Directory of D:\repos\kurs
+
+10/03/2023  23:37    <DIR>          .
+10/03/2023  23:37    <DIR>          ..
+               0 File(s)              0 bytes
+               2 Dir(s)  194,914,291,712 bytes free
+
+D:\repos\kurs>notepad README.md
+
+D:\repos\kurs>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        README.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\repos\kurs>git add README.md
+
+D:\repos\kurs>git commit -m 'start'
+[master (root-commit) d492f39] 'start'
+ 1 file changed, 4 insertions(+)
+ create mode 100644 README.md
+
+D:\repos\kurs>git log
+commit d492f3963822a4896986c29bab611705ccb7c338 (HEAD -> master)
+Author: Sergey Postnikov <postsergey@gmail.com>
+Date:   Tue Oct 3 23:39:14 2023 +0300
+
+    'start'
+
+D:\repos\kurs>git branch homework
+
+D:\repos\kurs>git branch
+  homework
+* master
+
+D:\repos\kurs>git checkout homework
+Switched to branch 'homework'
+
+D:\repos\kurs>notepad git_cmd_log.txt
+
+D:\repos\kurs>
